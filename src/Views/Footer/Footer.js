@@ -8,13 +8,13 @@ const Footer = () => {
             <footer className='footer container-fluid py-3'>
                 <ul className='m-0 p-0'>
                     <li>
-                        <a href='https://discord.gg/2RyvhZa4'><img src={discord}></img></a>
+                        <a href='https://discord.gg/2RyvhZa4'><img src={discord} alt="discord logo"></img></a>
                     </li>
                     <li>
-                        <a href='https://www.youtube.com/@nba2klebrowncity2klc61'><img src={youtube}></img></a>
+                        <a href='https://www.youtube.com/@nba2klebrowncity2klc61'><img src={youtube} alt="youtube logo"></img></a>
                     </li>
                     <li>
-                        <a href='https://www.facebook.com/NBA2KLebrownCity2KLC'><img src={facebook}></img></a>
+                        <a href='https://www.facebook.com/NBA2KLebrownCity2KLC'><img src={facebook} alt="facebbok logo"></img></a>
                     </li>
                 </ul>
             </footer>

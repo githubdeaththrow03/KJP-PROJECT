@@ -29,8 +29,6 @@ const GalleryPage = () => {
   const videoRef = useRef(null);
   const [isFormVisible, setIsFormVisible] = useState(false);
   const [cards, setCards] = useState([]);
-  const [scrollPosition, setScrollPosition] = useState(0);
-
 
   const handleCardClick = (cardId) => {
     if (playingCard === cardId) {
@@ -457,7 +455,11 @@ return (
 
     </div>
     {isFormVisible && <AddHighlightForm />}
+    {isFormVisible ? (
+        <AddHighlightForm onSubmit={handleFormSubmit} />
+      ) : null}
     </div>
+
     <Footer />
 </div>
 
