@@ -53,9 +53,9 @@ const GalleryPage = () => {
   };
 
 return (
+
 <div>
     <Navbar />
-    <div className="gallerypage">
     <div className="highlight-page" style={{ backgroundColor: '#38117A' }}>
         
         <div className='container-fluid d-flex flex-column'>
@@ -455,7 +455,7 @@ return (
     </div>
     <Footer />
 </div>
-</div>
+
   );
 };
 
