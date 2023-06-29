@@ -28,11 +28,12 @@
     font-weight: lighter;
 }
 
-@media screen and (max-width: 690px){
+@media screen and (max-width: 800px){
     .about-section p {
         line-height: 3rem;
         font-weight: bold;
         height:140vh;
+        padding: 0;
     }
 
     .carousel-item {

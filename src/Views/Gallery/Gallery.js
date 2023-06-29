@@ -5,6 +5,7 @@ import AddHighlightForm from '../AddHighlightPage/AddHighlight';
 import './Gallery.css';
 
 import highlight1 from '../../vids/pao_highlight.mp4';
+import james from '../../vids/james_highlight.mp4';
 
 import thumbnail1 from '../../img/Thumbnail-img-BRIX.png';
 import thumbnail2 from '../../img/Thumbnail-img-DRE.png';
@@ -54,6 +55,7 @@ const GalleryPage = () => {
 return (
 <div>
     <Navbar />
+    <div className="gallerypage">
     <div className="highlight-page" style={{ backgroundColor: '#38117A' }}>
         
         <div className='container-fluid d-flex flex-column'>
@@ -162,7 +164,7 @@ return (
         <div className="card">
         {playingCard === 5 ? (
             <video
-            src={highlight1}
+            src={james}
             ref={videoRef}
             autoPlay
             loop
@@ -452,6 +454,7 @@ return (
     {isFormVisible && <AddHighlightForm />}
     </div>
     <Footer />
+</div>
 </div>
   );
 };

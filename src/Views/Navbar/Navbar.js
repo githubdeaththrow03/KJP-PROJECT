@@ -18,8 +18,8 @@ const Navbar = () => {
             <i className={click ? 'bi bi-x' : 'bi bi-list'} />
       </div>
       <div className={click ? 'nav-menu active' : 'nav-menu'}>
-        <a href="about" className="navbar-link h5" onClick={closeMobileMenu}>Registration Form</a>
-        <a href="registration" className="navbar-link h5" onClick={closeMobileMenu}>About Us</a>
+        <a href="registration" className="navbar-link h5" onClick={closeMobileMenu}>Registration Form</a>
+        <a href="about" className="navbar-link h5" onClick={closeMobileMenu}>About Us</a>
         <a href="gallery" className="navbar-link h5" onClick={closeMobileMenu}>Gallery</a>
       </div>
     </nav>
