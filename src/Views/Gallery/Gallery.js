@@ -4,7 +4,7 @@ import Footer from '../Footer/Footer';
 import AddHighlightForm from '../AddHighlightPage/AddHighlight';
 import './Gallery.css';
 
-import highlight1 from '../../vids/Rewarded.mp4';
+import highlight1 from '../../vids/pao_highlight.mp4';
 
 import thumbnail1 from '../../img/Thumbnail-img-BRIX.png';
 import thumbnail2 from '../../img/Thumbnail-img-DRE.png';
@@ -52,20 +52,21 @@ const GalleryPage = () => {
   };
 
 return (
-    <>
+<div>
     <Navbar />
-    <div className='gallerypage'>
     <div className="highlight-page" style={{ backgroundColor: '#38117A' }}>
-        <h1 className='highlight-title'>Showcase 360</h1>
-        <p className="highlight-description">
-            Show off your epic moments, jaw-dropping plays, and unforgettable highlights! This is your chance to shine and share your best gaming moments with the world. Whether it's an insane headshot, a clutch victory, or a mind-blowing combo, we want to see it all. Get ready to level up and make your mark in the highlight reel!
-        </p>
-        <button className="add-button" onClick={handleAddHighlightClick}>
-            Add Your Highlights
-        </button>
         
+        <div className='container-fluid d-flex flex-column'>
+            <h1 className='highlight-title display-1 my-5'>Showcase 360</h1>
+            <p className="highlight-description text-center fs-4">
+                Show off your epic moments, jaw-dropping plays, and unforgettable highlights! This is your chance to shine and share your best gaming moments with the world. Whether it's an insane headshot, a clutch victory, or a mind-blowing combo, we want to see it all. Get ready to level up and make your mark in the highlight reel!
+            </p>
+            <div className='my-3 container-fluid text-center text-sm-center text-md-end text-lg-end text-xl-end'>
+                <button className="add-button p-2" onClick={handleAddHighlightClick}> Add Your Highlights</button>
+            </div>
+        </div>
 
-    <div className="highlight-cards row row-cols-3 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
+    <div className="highlight-cards">
         <div className="card">
         {playingCard === 1 ? (
             <video
@@ -181,6 +182,10 @@ return (
         </div>
         </div>
 
+    </div>
+
+    <div className="highlight-cards">
+
         <div className="card">
         {playingCard === 6 ? (
             <video
@@ -295,6 +300,10 @@ return (
             </button>
         </div>
         </div>
+
+    </div>
+
+    <div className="highlight-cards">
 
         <div className="card">
         {playingCard === 11 ? (
@@ -444,7 +453,6 @@ return (
     </div>
     <Footer />
 </div>
-</>
   );
 };
 

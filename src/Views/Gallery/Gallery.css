@@ -6,11 +6,6 @@
     background-color: #38117a;
     gap: 28px;
 }
-
-.gallerypage {
-    height: auto; 
-}
-
 .highlight-page {
     display: flex;
     flex-direction: column;
@@ -18,7 +13,6 @@
     justify-content: center;
     background-color: #38117a;
     padding: 20px;
-    height: auto;
 } 
 .highlight-title {
     text-align: center;
@@ -43,16 +37,17 @@
     margin: 0;
     line-height: 1.5;
 }
+
 .add-button {
-    position: absolute;
+    /* position: absolute;
     top: 355px;
-    right: 150px;
+    right: 150px; */
     background-color: #b755f2;
     color: #fff;
     border: none;
     border-radius: 30px;
-    padding: 10px 20px;
-    font-size: 16px;
+    /* padding: 10px 20px; */
+    /* font-size: 16px; */
     font-weight: bold;
     cursor: pointer;
 }
@@ -102,7 +97,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 690px){
+@media screen and (max-width: 800px){
     .card {
         width: 200px;
         height: 190px;
@@ -114,7 +109,7 @@
     } 
 
     .add-button {
-        top: 370px;
+        top: 200px;
     }
 
     .highlight-title {

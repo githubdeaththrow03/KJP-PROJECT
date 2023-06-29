@@ -7,13 +7,13 @@ import {
 import Home from "./Views/Home/Home";
 import Registration from "./Views/Registration/Registration";
 import About from "./Views/About/About";
-import GalleryPage from "./Views/Gallery/Gallery";
+import Gallery from "./Views/Gallery/Gallery";
 
 const router = createBrowserRouter ([
   { path: '/', element: <Home /> },
-  { path: 'about', element: <About /> },
   { path: 'registration', element: <Registration /> },
-  { path: 'gallery', element: <GalleryPage /> },
+  { path: 'about', element: <About /> },
+  { path: 'gallery', element: <Gallery /> },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
