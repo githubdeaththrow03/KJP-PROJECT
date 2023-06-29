@@ -73,9 +73,9 @@
     background-color: #38117a;
 }
   
-@media screen and (max-width: 800px){
+@media screen and (max-width: 930px){
     .exit-button{
-        left: 480px;
+        left: 400px;
     }
 
     .buttons .p1{
