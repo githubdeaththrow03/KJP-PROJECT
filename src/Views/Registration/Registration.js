@@ -153,7 +153,7 @@ const Registration = () => {
             <textarea rows="5" cols="30" placeholder='Type Your Answer..' value={idealCommunity} onChange={handleCommunity} maxLength={300}></textarea>
             <p className='character-count'>{idealCommunity.length}/300 characters</p>
           </div>
-          <div className="other-info">
+          <div className="other-info contribute">
             <h6 className="h6StyleTwo">What can you contribute to this community?</h6>
             <textarea rows="5" cols="30" placeholder='Type Your Answer..' value={contribution} onChange={handleContribution} maxLength={300}></textarea>
             <p className='character-count'>{contribution.length}/300 characters</p>

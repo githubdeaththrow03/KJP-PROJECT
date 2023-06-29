@@ -1,0 +1,88 @@
+.exit-button{
+    position: absolute;
+    top: 80px;
+    left: 770px;
+    color: #38117a;
+    background-color: #b755f2;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+}
+.exit-button:hover{
+    color: white;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.buttons .p1{
+    position: absolute;
+    left: 16px;
+    top: 155px;
+    right: 185px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #38117a;
+}
+.buttons .p2{
+    position: absolute;
+    left: 16px;
+    top: 215px;
+    right: 145px;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #38117a;
+}
+.submit-highlights:hover{
+    opacity: 0.8;
+}
+.add-highlight-container {
+    position: fixed;
+    top: 160px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+.add-highlight-box {
+    background-color: #b755f2;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    color: #ffffff;
+}
+.h2{
+    margin-bottom: 50px;
+    margin-top: 5px;
+}
+.submit-highlights{
+    background-color: #38117a;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 10px;
+}
+.video-input{
+    background-color: #38117a;
+}
+.picture-input{
+    background-color: #38117a;
+}
+
+@media screen and (max-width: 690px){
+    .exit-button{
+        left: 480px;
+    }
+
+    .buttons .p1{
+        top: 140px;
+    }
+
+    .buttons .p2{
+        top: 200px;
+    }
+}

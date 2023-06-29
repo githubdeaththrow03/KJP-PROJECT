@@ -162,9 +162,33 @@ textarea{
     font-style: italic;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 690px) {
     .form-container{
-        border: 1px solid #B755F2;
+        height: 270vh;
         width: 90vw;
+    }
+
+    .bottom-info {
+        margin-top: 100px;
+    }
+
+    .space-top{
+        margin-top: 70px;
+    }
+    .memberCom{
+        margin-top: 70px;
+        margin-bottom: 80px;
+    }
+
+    .reg-form {
+        padding-top:10px;
+    }
+
+    .contribute {
+        margin-top: 70px;
+    }
+
+    .submit-container {
+        margin-top: 10px;
     }
 }

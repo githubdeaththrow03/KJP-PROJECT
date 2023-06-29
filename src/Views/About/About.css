@@ -28,13 +28,14 @@
     font-weight: lighter;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 690px){
     .about-section p {
-        font-family: monospace;
-        color: white;
         line-height: 3rem;
-        font-family: 'Lilita One', cursive;
         font-weight: bold;
-        height:130vh;
+        height:140vh;
+    }
+
+    .carousel-item {
+        height: 800px;
     }
 }
