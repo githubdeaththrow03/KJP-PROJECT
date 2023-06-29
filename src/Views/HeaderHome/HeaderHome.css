@@ -1,0 +1,31 @@
+.header {
+    background-color: #38117A;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 40px;
+  }
+  
+  .logo-container {
+    margin-bottom: 218x;
+    margin-top: 0px;
+  }
+  
+  .logo {
+    max-width: 360px;
+  }
+  
+  .header-title {
+    color: #FFFFFF;
+    font-size: 34px;
+    margin: 10px 0;
+    font-family: Oswald;
+  }
+  
+  .header-paragraph {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 1000px;
+    font-family: Open Sans;
+  }
+  

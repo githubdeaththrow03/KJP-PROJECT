@@ -14,44 +14,18 @@ const Registration = () => {
   const [address, setAddress] = useState('');
   const [heardAboutUs, setHeardAboutUs] = useState(false);
   const [memberOfCommunities, setMemberOfCommunities] = useState('');
+  
 
   const handleSubmitButton = (e) => {
     e.preventDefault();
 
-    const validateEmail = (email) => {
-      const re = /\S+@\S+\.\S+/;
-      return re.test(email);
-    }
-
-    const calculateAge = (dobString) => {
-      var today = new Date();
-      var dob = new Date(dobString);
-      var age = today.getFullYear() - dob.getFullYear();
-      var m = today.getMonth() - dob.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) {
-        age--;
-    }
-    return age;
-    }
-    
-    if (calculateAge(dob) < 5) {
-      alert('You must be at least 5 years old to register. Thank you!');
-      return;
-    
-    }
-    
     if (fullName.trim() === '' || dob === '' || email.trim() === '' || address.trim() === '' || !heardAboutUs ||
-        memberOfCommunities.trim() === '' ||
-        idealCommunity.trim() === '' ||
-        contribution.trim() === '') {
-          alert('Please answer all the question. Thank you!');
-          return;
-        }
-    
-    if (!validateEmail(email)) {
-      alert('Please enter a valid email address. Thank you!');
+    memberOfCommunities.trim() === '' ||
+    idealCommunity.trim() === '' ||
+    contribution.trim() === '') {
+      alert('Please answer all the question. Thank you!');
       return;
-    }    
+    }
 
     setSubmit('Submitted');
     setShowMessage(true);
@@ -80,7 +54,7 @@ const Registration = () => {
   };
 
   const handleHeardAboutUsChange = (e) => {
-    setHeardAboutUs(e.target.value);
+    setHeardAboutUs(e.target.checked);
   };
 
   const handleMembershipChange = (e) => {
@@ -92,7 +66,7 @@ const Registration = () => {
     setIdealCommunity(text.substring(0,300));
   };
 
-  const handleContribution = (e) => {
+  const handleCotribution = (e) => {
     const text = e.target.value;
     setContribution(text.substring(0, 300));
   }
@@ -124,7 +98,7 @@ const Registration = () => {
               </div>
               <div className="divide-input">
                 <label className="email">Email Address:</label>
-                <input className="input_emailAdd" type="email" value={email} onChange={handleEmailChange} placeholder="Type Your Email Address Here.." required/>
+                <input className="input_emailAdd" type="text" value={email} onChange={handleEmailChange} placeholder="Type Your Email Address Here.." />
               </div>
               <div className="divide-input">
                 <label>Address:</label>
@@ -134,12 +108,10 @@ const Registration = () => {
           </div>
           <div className="other-info space-top">
             <h6>How did you hear about us?</h6>
-            <div className="section2"><input type="checkbox" value="engine" defaultChecked 
+            <div className="section2"><input type="checkbox" checked={heardAboutUs}
                 onChange={handleHeardAboutUsChange} />Search Engine (Google, etc...)</div>
-            <div className="section2"><input type="checkbox" value="social" defaultChecked 
-                onChange={handleHeardAboutUsChange} />Social Media (Facebook, etc...)</div>
-            <div className="section2"><input type="checkbox" value="referral" defaultChecked 
-                onChange={handleHeardAboutUsChange} />Referral: </div>
+            <div className="section2"><input type="checkbox" />Social Media (Facebook, etc...)</div>
+            <div className="section2"><input type="checkbox"/>Referral: </div>
           </div>
           <div className="other-info memberCom">
             <h6>Are you a member of other communities?</h6>
@@ -155,7 +127,7 @@ const Registration = () => {
           </div>
           <div className="other-info">
             <h6 className="h6StyleTwo">What can you contribute to this community?</h6>
-            <textarea rows="5" cols="30" placeholder='Type Your Answer..' value={contribution} onChange={handleContribution} maxLength={300}></textarea>
+            <textarea rows="5" cols="30" placeholder='Type Your Answer..' value={contribution} onChange={handleCotribution} maxLength={300}></textarea>
             <p className='character-count'>{contribution.length}/300 characters</p>
           </div>
           <div className="other-info bottom-info">
@@ -166,7 +138,7 @@ const Registration = () => {
               please contact us at admin@gmail.com.
             </p>
             <div className="submit-container">
-              <button onClick={handleSubmitButton} id="submit" className="submit-button">{submit}</button>
+              <button onClick={handleSubmitButton} className="submit-button">{submit}</button>
             </div>
           </div>
         </div>

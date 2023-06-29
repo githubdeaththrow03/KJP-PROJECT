@@ -29,6 +29,8 @@ const GalleryPage = () => {
   const videoRef = useRef(null);
   const [isFormVisible, setIsFormVisible] = useState(false);
   const [cards, setCards] = useState([]);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
 
   const handleCardClick = (cardId) => {
     if (playingCard === cardId) {
@@ -52,6 +54,8 @@ const GalleryPage = () => {
     setIsFormVisible(false);
   };
 
+
+
 return (
 
 <div>
@@ -60,7 +64,7 @@ return (
         
         <div className='container-fluid d-flex flex-column'>
             <h1 className='highlight-title display-1 my-5'>Showcase 360</h1>
-            <p className="highlight-description text-center fs-4">
+            <p className="highlight-description text-start text-sm-center fs-4">
                 Show off your epic moments, jaw-dropping plays, and unforgettable highlights! This is your chance to shine and share your best gaming moments with the world. Whether it's an insane headshot, a clutch victory, or a mind-blowing combo, we want to see it all. Get ready to level up and make your mark in the highlight reel!
             </p>
             <div className='my-3 container-fluid text-center text-sm-center text-md-end text-lg-end text-xl-end'>
@@ -69,7 +73,8 @@ return (
         </div>
 
     <div className="highlight-cards">
-        <div className="card">
+        
+        <div className='card'>  
         {playingCard === 1 ? (
             <video
             src={highlight1}
