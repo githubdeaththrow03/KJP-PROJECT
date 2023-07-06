@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import './About.css'
@@ -7,6 +8,9 @@ import slide_2_picture from '../../img/community-banner-1.png'
 import slide_3_picture from '../../img/community-picture-2.jpg'
 
 const About = () => {
+    useEffect(() => {
+        document.title = "2KLC | About Us"
+      }, []);
     return (
         <div className="about_page">
             <Navbar />

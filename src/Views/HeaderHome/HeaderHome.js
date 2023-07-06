@@ -8,10 +8,10 @@ function Header() {
   return (
     <header className="header">
       <div className="logo-container">
-        <img src={logo} alt="Logo" className="logo" />
+        <img src={logo} alt="Logo" className="logo img-fluid" />
       </div>
-      <h1 className="header-title">Dive Into Basketball Excellence</h1>
-      <p className="header-paragraph">
+      <h1 className="header-title text-start text-sm-center">Dive Into Basketball Excellence</h1>
+      <p className="header-paragraph text-start text-sm-center">
             At Basketball Excellence, we believe in the power of passion,
           dedication, and teamwork. Join our vibrant community of basketball
           enthusiasts, where you can improve your skills, connect with fellow

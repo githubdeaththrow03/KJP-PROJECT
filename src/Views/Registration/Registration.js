@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import './Registration.css';
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+import axios from 'axios';
+import { useEffect } from 'react';
+
 
 const Registration = () => {
   const [submit, setSubmit] = useState('Submit');
@@ -14,95 +17,122 @@ const Registration = () => {
   const [address, setAddress] = useState('');
   const [heardAboutUs, setHeardAboutUs] = useState(false);
   const [memberOfCommunities, setMemberOfCommunities] = useState('');
+  const API_ENDPOINT_URL = 'https://jsonplaceholder.typicode.com/posts';
 
-  const handleSubmitButton = (e) => {
+  const handleSubmitButton = async (e) => {
     e.preventDefault();
-
+  
     const validateEmail = (email) => {
       const re = /\S+@\S+\.\S+/;
       return re.test(email);
-    }
-
+    };
+  
     const calculateAge = (dobString) => {
-      var today = new Date();
-      var dob = new Date(dobString);
-      var age = today.getFullYear() - dob.getFullYear();
-      var m = today.getMonth() - dob.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) {
+      const today = new Date();
+      const dob = new Date(dobString);
+      let age = today.getFullYear() - dob.getFullYear();
+      const m = today.getMonth() - dob.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) {
         age--;
-    }
-    return age;
-    }
-    
-    if (calculateAge(dob) < 10) {
-      alert('You must be at least 10 years old to register. Thank you!');
+      }
+      return age;
+    };
+  
+    if (calculateAge(dob) < 7) {
+      alert('You must be at least 7 years old to register. Thank you!');
       return;
-
-    
     }
-    
-    if (fullName.trim() === '' || dob === '' || email.trim() === '' || address.trim() === '' || !heardAboutUs ||
-        memberOfCommunities.trim() === '' ||
-        idealCommunity.trim() === '' ||
-        contribution.trim() === '') {
-          alert('Please answer all the question. Thank you!');
-          return;
-        }
-    
+  
+    if (
+      fullName.trim() === '' ||
+      dob === '' ||
+      email.trim() === '' ||
+      address.trim() === '' ||
+      !heardAboutUs ||
+      memberOfCommunities.trim() === '' ||
+      idealCommunity.trim() === '' ||
+      contribution.trim() === ''
+    ) {
+      alert('Please answer all the questions. Thank you!');
+      return;
+    }
+  
     if (!validateEmail(email)) {
       alert('Please enter a valid email address. Thank you!');
       return;
-    }    
-
-    setSubmit('Submitted');
-    setShowMessage(true);
+    }
+  
+    try {
+      const payload = {
+        fullName,
+        dob,
+        email,
+        address,
+        heardAboutUs,
+        memberOfCommunities,
+        idealCommunity,
+        contribution,
+      };
+  
+      const response = await axios.post(API_ENDPOINT_URL, payload);
+      console.log(response.data);
+  
+      setSubmit('Submitted');
+      setShowMessage(true);
+    } catch (error) {
+      console.error(error);
+    }
   };
-
+  
   const handleOkayButton = () => {
-
     setSubmit('Submit');
     setShowMessage(false);
   };
-
+  
   const handleFullNameChange = (e) => {
     setFullName(e.target.value);
   };
-
+  
   const handleDOBChange = (e) => {
     setDob(e.target.value);
   };
-
+  
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
-
+  
   const handleAddressChange = (e) => {
     setAddress(e.target.value);
   };
-
+  
   const handleHeardAboutUsChange = (e) => {
     setHeardAboutUs(e.target.value);
   };
-
+  
   const handleMembershipChange = (e) => {
     setMemberOfCommunities(e.target.value);
   };
+  
 
   const handleCommunity = (e) => {
     const text = e.target.value;
-    setIdealCommunity(text.substring(0,300));
+    setIdealCommunity(text.substring(0, 300));
   };
-
+  
   const handleContribution = (e) => {
     const text = e.target.value;
     setContribution(text.substring(0, 300));
-  }
+  };
+
+  useEffect(() => {
+    document.title = "2KLC | Registration Form"
+  }, []);
 
   return (
     <>
       <Navbar />
       <form className="reg-form">
-        <h1 className="reg-title display-1">Registration</h1>
+        <h1 className="reg-title display-1 mb-5">Registration</h1>
         {showMessage && (
           <div className="message-box">
             <p>You have successfully submitted the form.</p>

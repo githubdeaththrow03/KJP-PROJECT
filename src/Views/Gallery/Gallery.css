@@ -22,10 +22,12 @@
 .highlight-description {
     color: #FFF;
     font-family: Roboto;
+    margin-bottom: 50px;
 }
 .highlight-description p{
     margin: 0;
     line-height: 1.5;
+    margin-bottom: 20px;
 }
 
 .add-button { 
@@ -83,5 +85,9 @@
     font-size: 10px;
     font-weight: bold;
     cursor: pointer;
+}
+.bottom-center button:hover{
+    background-color: #FFF;
+    color: #38117a;
 }
 

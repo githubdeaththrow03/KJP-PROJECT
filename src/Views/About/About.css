@@ -25,10 +25,9 @@
 }
 
 .about-section p {
-    font-family: monospace;
     color: white;
     line-height: 2.5rem;
-    font-family: 'Lilita One', cursive;
+    font-family: Open Sans;
     font-weight: lighter;
 }
 
