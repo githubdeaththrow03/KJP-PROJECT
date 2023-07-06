@@ -20,15 +20,11 @@
 .about_page {
     display: flex;
     flex-direction: column;
-    /* overflow: auto; */
-    /* height: ; */
 }
-
 .about-section p {
     color: white;
-    line-height: 2.5rem;
-    font-family: Open Sans;
-    font-weight: lighter;
+    line-height: 2rem;
+    font-family: 'Anton', sans-serif;
 }
 
 @media screen and (max-width: 800px){

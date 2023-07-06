@@ -14,7 +14,8 @@ li {
 }
 
 p {
-    font-family: 'Lilita One', cursive;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.1em;
     color: white;
     margin: 0;
 }
