@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Lilita One', cursive;
+    font-family: 'Antonio', sans-serif;
     padding-top:0;
 }
 .personal-details, .other-info {
@@ -42,7 +42,7 @@
     text-align: center;
 }
 .foot-info{
-    font-family: 'Lilita One', cursive;
+    font-family: 'Antonio', sans-serif;
     font-style: italic;
     font-size: 15px;
 }
@@ -163,7 +163,7 @@ textarea{
 }
 .character-count{
     color: gray;
-    font-family: 'Lilita One', cursive;
+    font-family: 'Antonio', sans-serif;
     font-style: italic;
     font-size: 22px;
     

@@ -23,8 +23,7 @@
 }
 .about-section p {
     color: white;
-    line-height: 2rem;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Antonio', sans-serif;
 }
 
 @media screen and (max-width: 800px){

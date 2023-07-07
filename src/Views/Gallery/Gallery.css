@@ -21,7 +21,7 @@
 }
 .highlight-description {
     color: #FFF;
-    font-family: 'Lilita One', cursive;
+    font-family: 'Antonio', sans-serif;
     margin-bottom: 50px;
 }
 .highlight-description p{
@@ -83,9 +83,8 @@
     border: none;
     padding: 10px 20px;
     font-size: 10px;
-    font-weight: bold;
     cursor: pointer;
-    font-family: 'Lilita One', cursive;
+    font-family: 'Antonio', sans-serif;
 }
 .bottom-center button:hover{
     background-color: #FFF;
