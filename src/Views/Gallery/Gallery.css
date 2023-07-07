@@ -17,11 +17,11 @@
 .highlight-title {
     text-align: center;
     color: #fff;
-    font-family: 'Lilita One', cursive;
+    font-family: 'Anton', sans-serif;
 }
 .highlight-description {
     color: #FFF;
-    font-family: Roboto;
+    font-family: 'Lilita One', cursive;
     margin-bottom: 50px;
 }
 .highlight-description p{
@@ -85,6 +85,7 @@
     font-size: 10px;
     font-weight: bold;
     cursor: pointer;
+    font-family: 'Lilita One', cursive;
 }
 .bottom-center button:hover{
     background-color: #FFF;
