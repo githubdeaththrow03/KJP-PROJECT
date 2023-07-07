@@ -42,7 +42,7 @@ const About = () => {
             </div>
             <div className='about-section container-fluid p-3'>
                 <div className='container-fluid border mt-3'></div>
-                <p className='p-5 m-0 fs-4 text-start text-sm-center overflow-auto'>
+                <p className='p-5 m-0 fs-2 text-start text-sm-center overflow-auto'>
                     This is a lively Filipino community dedicated to playing NBA2K. It consists of players, fans, and enthusiasts who share a passion for the popular basketball    video game series. The community is diverse, comprising individuals from different backgrounds, age groups, and gaming skill levels, all united by their love  for basketball and gaming. However, the NBA2KLC community currently faces a challlenge with a slow registration process that hinders its growth and engagement.
                 </p>
                 <div className='container-fluid border mb-3'></div>
