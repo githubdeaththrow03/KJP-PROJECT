@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import logo from "../../img/2KLC_logo.png";
 import './Navbar.css';
-
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
     const [click, setClick] = useState(false);
 
@@ -18,9 +18,9 @@ const Navbar = () => {
             <i className={click ? 'bi bi-x' : 'bi bi-list'} />
       </div>
       <div className={click ? 'nav-menu active' : 'nav-menu'}>
-        <a href="registration" className="navbar-link h5" onClick={closeMobileMenu}>Registration Form</a>
-        <a href="about" className="navbar-link h5" onClick={closeMobileMenu}>About Us</a>
-        <a href="gallery" className="navbar-link h5" onClick={closeMobileMenu}>Gallery</a>
+        <NavLink to='/Registration'><a href="registration" className="navbar-link h5" onClick={closeMobileMenu}>Registration Form</a></NavLink>
+        <NavLink to='/About'><a href="about" className="navbar-link h5" onClick={closeMobileMenu}>About Us</a></NavLink>
+        <NavLink to='/Gallery'><a href="gallery" className="navbar-link h5" onClick={closeMobileMenu}>Gallery</a></NavLink>
       </div>
     </nav>
   );
