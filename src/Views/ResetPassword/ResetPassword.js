@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import axios from 'axios';
 
 const ResetPassword = () => {
@@ -7,7 +7,7 @@ const ResetPassword = () => {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [passwordError, setPasswordError] = useState(false);
   const [resetError, setResetError] = useState('');
-  const history = useHistory();
+  const history = useNavigate();
   const location = useLocation();
 
   const handleResetPassword = (e) => {
@@ -29,7 +29,6 @@ const ResetPassword = () => {
     axios
       .post('http://localhost:4000/users/reset-password', { resetToken, password })
       .then((response) => {
-        // Password reset successful, you can redirect the user to the login page
         history.push('/login');
       })
       .catch((error) => {

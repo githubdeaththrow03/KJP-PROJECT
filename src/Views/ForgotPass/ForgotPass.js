@@ -24,7 +24,12 @@ const ForgotPassword = () => {
       axios
         .post('http://localhost:4000/users/forgot-password', { username, email })
         .then((response) => {
-          setIsEmailSent(true);
+          // Check if the response indicates success or not found
+          if (response.data.success) {
+            setIsEmailSent(true);
+          } else {
+            setEmailError('Cannot find your account. Please verify your email and username.');
+          }
         })
         .catch((error) => {
           console.error('Error:', error);
