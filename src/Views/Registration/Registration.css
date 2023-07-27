@@ -12,9 +12,10 @@
   .registration-main-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     min-height: 100vh;
   }  
-.container {
+  .container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,6 +29,8 @@
     background: #B755F2;
     border-radius: 4px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
   }
   
   input {
@@ -113,9 +116,7 @@
   
   .question-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
   }
   
   .question-container label {
@@ -137,8 +138,11 @@
     margin-left: 20px;
   }
 
-  .dob{
-    width: 300px;
+  .dob {
+    width: 100%;
+  }
+  .dob input{
+    width: 100%;
   }
   .message-box{
     display: flex;
@@ -217,11 +221,18 @@
     opacity: 0.8;
   }
   @media (max-width: 800px) {
+    .registration-main-container {
+      height: 100%;
+    }  
     form {
       width: 100%;
-      padding: 10px;
+      text-align: center;
     }
-  
+    .question-container {
+      display: flex;
+      flex-direction: column;
+    }
+    
     .text-header {
       text-align: center;
     }
@@ -231,7 +242,6 @@
     }
   
     .success-message {
-      width: 90%;
       margin: 0 auto;
       text-align: center;
       margin-top: 50px;
@@ -282,6 +292,12 @@
 
     .button-container {
       justify-content: space-around;
+    }
+    .message-box{
+      width: 100%;
+    }
+    .message-input {
+      width: 100%;
     }
   }
   
