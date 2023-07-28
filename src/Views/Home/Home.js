@@ -96,7 +96,8 @@ const Home = () => {
   };
   
   useEffect(() => {
-    document.title = "2KLC | Home"
+    document.title = "2KLC | Home";
+    fetchHighlightData();
   }, []);
   
 return (

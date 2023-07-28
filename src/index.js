@@ -13,6 +13,7 @@ import Login from './Views/Login/Login';
 import HomeAbout from './Views/HomeAbout/HomeAbout';
 import AdminBoard from "./Views/AdminBoard/AdminBoard";
 import ForgotPassword from "./Views/ForgotPass/ForgotPass";
+import ResetPassword from "./Views/ResetPassword/ResetPassword";
 
 
 const router = createBrowserRouter ([
@@ -25,6 +26,7 @@ const router = createBrowserRouter ([
   { path: 'homeabout', element: <HomeAbout /> },
   { path: 'adminboard', element: <AdminBoard/> },
   { path: 'forgotpass', element: <ForgotPassword/> },
+  { path: 'resetpass', element: <ResetPassword/> },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
