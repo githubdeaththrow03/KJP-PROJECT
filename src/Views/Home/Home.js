@@ -102,7 +102,7 @@ const Home = () => {
   
 return (
 
-<div>
+<div className='home-main-container'>
     <NavHome />
     <div className="highlight-Homepage ren" style={{ backgroundColor: '#38117A' }}>
         <div className='container-fluid d-flex align-items-center justify-content-between'>
