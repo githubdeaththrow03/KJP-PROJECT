@@ -3,9 +3,11 @@ body {
 }
 
 .login-main-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 150px;
+    min-height: 100vh;
 }
 
 .login-container {
