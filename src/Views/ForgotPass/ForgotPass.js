@@ -24,7 +24,6 @@ const ForgotPassword = () => {
       axios
         .post('http://localhost:4000/users/forgot-password', { username, email })
         .then((response) => {
-          // Check if the response indicates success or not found
           if (response.data.success) {
             setIsEmailSent(true);
           } else {
@@ -63,7 +62,7 @@ const ForgotPassword = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-              {emailError && <p className="error-message">Please enter your email address</p>}
+              {emailError && <p className="error-message">Please enter your correct email address</p>}
             </div>
             <div className="input-group">
               <label htmlFor="username">Username:</label>
@@ -75,7 +74,7 @@ const ForgotPassword = () => {
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
               />
-              {usernameError && <p className="error-message">Please enter your username</p>}
+              {usernameError && <p className="error-message">Please enter your correct username</p>}
             </div>
             <button className="reset-password-button" onClick={handleForgotPassword}>
               Reset Password
