@@ -57,258 +57,228 @@ return (
             </p>
             <div className='container-fluid border mt-3'></div>
         </div>
-
-    <div className="highlight-card">
-        
-        <div className='card'>  
-        {playingCard === 1 ? (
-            <video
-            src={aaron_garcia}
-            ref={videoRef}
-            autoPlay
-            loop
-            controls
-            />
-        ) : (
-            <img
-            src={thumbnail1}
-            alt="Thumbnail 1"
-            onClick={() => handleCardClick(1)}
-            />
-        )}
-        <div className="bottom-center">
-            <button onClick={() => handleCardClick(1)}>
-            {playingCard === 1 ? 'Go Back' : 'See Highlights'}
-            </button>
+        <div className="highlight-card">
+            <div className='card'>  
+                {playingCard === 1 ? (
+                    <video
+                    src={aaron_garcia}
+                    ref={videoRef}
+                    autoPlay
+                    loop
+                    controls
+                    />
+                ) : (
+                    <img
+                    src={thumbnail1}
+                    alt="Thumbnail 1"
+                    onClick={() => handleCardClick(1)}
+                    />
+                )}
+                <div className="bottom-center">
+                    <button onClick={() => handleCardClick(1)}>
+                        {playingCard === 1 ? 'Go Back' : 'See Highlights'}
+                    </button>
+                </div>
+            </div>
+            <div className="card">
+                {playingCard === 3 ? (
+                    <video
+                    src={paolo_herrera}
+                    ref={videoRef}
+                    autoPlay
+                    loop
+                    controls
+                    />
+                ) : (
+                    <img
+                    src={thumbnail3}
+                    alt="Thumbnail 3"
+                    onClick={() => handleCardClick(3)}
+                    />
+                )}
+                <div className="bottom-center">
+                    <button onClick={() => handleCardClick(3)}>
+                        {playingCard === 3 ? 'Go Back' : 'See Highlights'}
+                    </button>
+                </div>
+            </div>
+            <div className="card">
+                {playingCard === 4 ? (
+                    <video
+                    src={daryn_gaces}
+                    ref={videoRef}
+                    autoPlay
+                    loop
+                    controls
+                    />
+                ) : (
+                    <img
+                    src={thumbnail4}
+                    alt="Thumbnail 4"
+                    onClick={() => handleCardClick(4)}
+                    />
+                )}
+                <div className="bottom-center">
+                    <button onClick={() => handleCardClick(4)}>
+                        {playingCard === 4 ? 'Go Back' : 'See Highlights'}
+                    </button>
+                </div>
+            </div>
+            <div className="card">
+                {playingCard === 5 ? (
+                    <video
+                    src={james_lorete}
+                    ref={videoRef}
+                    autoPlay
+                    loop
+                    controls
+                    />
+                ) : (
+                    <img
+                    src={thumbnail5}
+                    alt="Thumbnail 5"
+                    onClick={() => handleCardClick(5)}
+                    />
+                )}
+                <div className="bottom-center">
+                    <button onClick={() => handleCardClick(5)}>
+                        {playingCard === 5 ? 'Go Back' : 'See Highlights'}
+                    </button>
+                </div>
+            </div>
+            <div className="card">
+                {playingCard === 9 ? (
+                    <video
+                    src={miguel_reloj}
+                    ref={videoRef}
+                    autoPlay
+                    loop
+                    controls
+                    />
+                ) : (
+                    <img
+                    src={thumbnail9}
+                    alt="Thumbnail 9"
+                    onClick={() => handleCardClick(9)}
+                    />
+                )}
+                <div className="bottom-center">
+                    <button onClick={() => handleCardClick(9)}>
+                        {playingCard === 9 ? 'Go Back' : 'See Highlights'}
+                    </button>
+                </div>
+            </div>
+            <div className="card">
+                {playingCard === 10 ? (
+                    <video
+                    src={paolo_herrera}
+                    ref={videoRef}
+                    autoPlay
+                    loop
+                    controls
+                    />
+                ) : (
+                    <img
+                    src={thumbnail10}
+                    alt="Thumbnail 10"
+                    onClick={() => handleCardClick(10)}
+                    />
+                )}
+                <div className="bottom-center">
+                    <button onClick={() => handleCardClick(10)}>
+                        {playingCard === 10 ? 'Go Back' : 'See Highlights'}
+                    </button>
+                </div>
+            </div>
+            <div className="card">
+                {playingCard === 12 ? (
+                    <video
+                    src={paolo_herrera}
+                    ref={videoRef}
+                    autoPlay
+                    loop
+                    controls
+                    />
+                ) : (
+                    <img
+                    src={thumbnail12}
+                    alt="Thumbnail 12"
+                    onClick={() => handleCardClick(12)}
+                    />
+                )}
+                <div className="bottom-center">
+                    <button onClick={() => handleCardClick(12)}>
+                        {playingCard === 12 ? 'Go Back' : 'See Highlights'}
+                    </button>
+                </div>
+            </div>
+            <div className="card">
+                {playingCard === 13 ? (
+                    <video
+                    src={rogelio_yulo_uy}
+                    ref={videoRef}
+                    autoPlay
+                    loop
+                    controls
+                    />
+                ) : (
+                    <img
+                    src={thumbnail13}
+                    alt="Thumbnail 13"
+                    onClick={() => handleCardClick(13)}
+                    />
+                )}
+                <div className="bottom-center">
+                    <button onClick={() => handleCardClick(13)}>
+                        {playingCard === 13 ? 'Go Back' : 'See Highlights'}
+                    </button>
+                </div>
+            </div>
+            <div className="card">
+                {playingCard === 15 ? (
+                    <video
+                    src={paolo_herrera}
+                    ref={videoRef}
+                    autoPlay
+                    loop
+                    controls
+                    />
+                ) : (
+                    <img
+                    src={thumbnail15}
+                    alt="Thumbnail 15"
+                    onClick={() => handleCardClick(15)}
+                    />
+                )}
+                <div className="bottom-center">
+                    <button onClick={() => handleCardClick(15)}>
+                        {playingCard === 15 ? 'Go Back' : 'See Highlights'}
+                    </button>
+                </div>
+            </div>
+            <div className="card">
+                {playingCard === 16 ? (
+                    <video
+                    src={paolo_herrera}
+                    ref={videoRef}
+                    autoPlay
+                    loop
+                    controls
+                    />
+                ) : (
+                    <img
+                    src={thumbnail16}
+                    alt="Thumbnail 16"
+                    onClick={() => handleCardClick(16)}
+                    />
+                )}
+                <div className="bottom-center">
+                    <button onClick={() => handleCardClick(16)}>
+                        {playingCard === 16 ? 'Go Back' : 'See Highlights'}
+                    </button>
+                </div>
+            </div>
         </div>
-        </div>
-
-
-        <div className="card">
-        {playingCard === 3 ? (
-            <video
-            src={paolo_herrera}
-            ref={videoRef}
-            autoPlay
-            loop
-            controls
-            />
-        ) : (
-            <img
-            src={thumbnail3}
-            alt="Thumbnail 3"
-            onClick={() => handleCardClick(3)}
-            />
-        )}
-        <div className="bottom-center">
-            <button onClick={() => handleCardClick(3)}>
-            {playingCard === 3 ? 'Go Back' : 'See Highlights'}
-            </button>
-        </div>
-        </div>
-
-        <div className="card">
-        {playingCard === 4 ? (
-            <video
-            src={daryn_gaces}
-            ref={videoRef}
-            autoPlay
-            loop
-            controls
-            />
-        ) : (
-            <img
-            src={thumbnail4}
-            alt="Thumbnail 4"
-            onClick={() => handleCardClick(4)}
-            />
-        )}
-        <div className="bottom-center">
-            <button onClick={() => handleCardClick(4)}>
-            {playingCard === 4 ? 'Go Back' : 'See Highlights'}
-            </button>
-        </div>
-        </div>
-
-        <div className="card">
-        {playingCard === 5 ? (
-            <video
-            src={james_lorete}
-            ref={videoRef}
-            autoPlay
-            loop
-            controls
-            />
-        ) : (
-            <img
-            src={thumbnail5}
-            alt="Thumbnail 5"
-            onClick={() => handleCardClick(5)}
-            />
-        )}
-        <div className="bottom-center">
-            <button onClick={() => handleCardClick(5)}>
-            {playingCard === 5 ? 'Go Back' : 'See Highlights'}
-            </button>
-        </div>
-        </div>
-
-        <div className="card">
-        {playingCard === 9 ? (
-            <video
-            src={miguel_reloj}
-            ref={videoRef}
-            autoPlay
-            loop
-            controls
-            />
-        ) : (
-            <img
-            src={thumbnail9}
-            alt="Thumbnail 9"
-            onClick={() => handleCardClick(9)}
-            />
-        )}
-        <div className="bottom-center">
-            <button onClick={() => handleCardClick(9)}>
-            {playingCard === 9 ? 'Go Back' : 'See Highlights'}
-            </button>
-        </div>
-        </div>
-
-    </div>
-
-    <div className="highlight-card">
-
-
-
-
-
-       
-
-        <div className="card">
-        {playingCard === 10 ? (
-            <video
-            src={paolo_herrera}
-            ref={videoRef}
-            autoPlay
-            loop
-            controls
-            />
-        ) : (
-            <img
-            src={thumbnail10}
-            alt="Thumbnail 10"
-            onClick={() => handleCardClick(10)}
-            />
-        )}
-        <div className="bottom-center">
-            <button onClick={() => handleCardClick(10)}>
-            {playingCard === 10 ? 'Go Back' : 'See Highlights'}
-            </button>
-        </div>
-        </div>
-
-
-
-
-        <div className="card">
-        {playingCard === 12 ? (
-            <video
-            src={paolo_herrera}
-            ref={videoRef}
-            autoPlay
-            loop
-            controls
-            />
-        ) : (
-            <img
-            src={thumbnail12}
-            alt="Thumbnail 12"
-            onClick={() => handleCardClick(12)}
-            />
-        )}
-        <div className="bottom-center">
-            <button onClick={() => handleCardClick(12)}>
-            {playingCard === 12 ? 'Go Back' : 'See Highlights'}
-            </button>
-        </div>
-        </div>
-
-        <div className="card">
-        {playingCard === 13 ? (
-            <video
-            src={rogelio_yulo_uy}
-            ref={videoRef}
-            autoPlay
-            loop
-            controls
-            />
-        ) : (
-            <img
-            src={thumbnail13}
-            alt="Thumbnail 13"
-            onClick={() => handleCardClick(13)}
-            />
-        )}
-        <div className="bottom-center">
-            <button onClick={() => handleCardClick(13)}>
-            {playingCard === 13 ? 'Go Back' : 'See Highlights'}
-            </button>
-        </div>
-        </div>
-
-
-
-        <div className="card">
-        {playingCard === 15 ? (
-            <video
-            src={paolo_herrera}
-            ref={videoRef}
-            autoPlay
-            loop
-            controls
-            />
-        ) : (
-            <img
-            src={thumbnail15}
-            alt="Thumbnail 15"
-            onClick={() => handleCardClick(15)}
-            />
-        )}
-        <div className="bottom-center">
-            <button onClick={() => handleCardClick(15)}>
-            {playingCard === 15 ? 'Go Back' : 'See Highlights'}
-            </button>
-        </div>
-        </div>
-
-        
-
-        <div className="card">
-        {playingCard === 16 ? (
-            <video
-            src={paolo_herrera}
-            ref={videoRef}
-            autoPlay
-            loop
-            controls
-            />
-        ) : (
-            <img
-            src={thumbnail16}
-            alt="Thumbnail 16"
-            onClick={() => handleCardClick(16)}
-            />
-        )}
-        <div className="bottom-center">
-            <button onClick={() => handleCardClick(16)}>
-            {playingCard === 16 ? 'Go Back' : 'See Highlights'}
-            </button>
-        </div>
-        </div>
-
-    </div>
     </div>
 
     <Footer />
